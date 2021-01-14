@@ -33,6 +33,8 @@ export class NavigatorMainComponent implements OnInit, OnChanges, OnDestroy
     public ngOnInit(): void
     {
         this._navigatorService.component = this;
+
+        this.prepareNavigator();
     }
 
     public ngOnChanges(changes: SimpleChanges): void
