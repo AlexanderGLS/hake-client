@@ -1,0 +1,1 @@
+sh ./src/install.sh && npm i && npm run build-prod
