@@ -4,16 +4,13 @@ import { RoomWidgetChatUpdateEvent } from '../../events/RoomWidgetChatUpdateEven
 
 @Component({
     template: `
-    <div #chatContainer class="nitro-room-chat-item-component chat-style-{{ chatStyle }} chat-type-{{ chatType }}" (click)="selectUser()">
-        <div class="chat-left" [ngStyle]="{ 'background-color': senderColorString }">
-            <div class="user-container">
-                <div *ngIf="senderImageUrl" class="user-image" [ngStyle]="(petType >= 0) ? { 'background-image': 'url(' + senderImageUrl + ')', 'transform': 'scale(1)', 'top': '-53px' } : { 'background-image': 'url(' + senderImageUrl + ')' }"></div>
-            </div>
+    <div #chatContainer class="chat-bubble bubble-{{ chatStyle }}" (click)="selectUser()">
+        <div class="user-container">
+            <div *ngIf="senderImageUrl" class="user-image" [ngStyle]="(petType >= 0) ? { 'background-image': 'url(' + senderImageUrl + ')', 'transform': 'scale(1)', 'top': '-53px' } : { 'background-image': 'url(' + senderImageUrl + ')' }"></div>
         </div>
-        <div class="chat-right">
+        <div class="chat-content">
             <b [innerHTML]="decoratedUsername"></b> {{ message }}
         </div>
-        <div class="chat-pointer"></div>
     </div>`
 })
 export class RoomChatItemComponent
