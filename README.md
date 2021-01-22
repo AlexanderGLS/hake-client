@@ -1,7 +1,7 @@
-![](https://svgshare.com/i/TAX.svg)
+![](https://svgshare.com/i/TM1.svg)
 
 
-# Nitro HTML5 Client
-### This is the official repository for The Nitro HTML5 Client.
+# Hake HTML5 Client web based on Nitro
+### This is the official repository for The Hake HTML5 Client.
 
-### [Click Here To Get Started](https://git.krews.org/nitro/nitro-client/-/wikis/home)
+### [Click Here To Get Started](https://github.com/AlexanderGLS/hake-client/-/wikis/home)
